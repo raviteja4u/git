@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "23475efb-3e8c-4489-8b7d-098d56125753",
+		"name": "sb4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28822669",
+		"_collection_link": "https://dark-desert-651067.postman.co/workspace/rVITEJA~6bcdea28-a200-49c8-91b7-dfde95bac8bc/collection/28822669-23475efb-3e8c-4489-8b7d-098d56125753?action=share&creator=28822669&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "welcomenote",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://simple-books-api.glitch.me"
+					},
+					"response": []
+				},
+				{
+					"name": "staus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://simple-books-api.glitch.me/status"
+					},
+					"response": []
+				},
+				{
+					"name": "listofbooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://simple-books-api.glitch.me/books"
+					},
+					"response": []
+				},
+				{
+					"name": "book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://simple-books-api.glitch.me/books/2"
+					},
+					"response": []
+				},
+				{
+					"name": "order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "51a8b50bc0fe6112093dfc1767a0b7d4732016b24674167d9f35a5c63d6f7d58"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\": 1,\r\n    \"customerName\": \"ravi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://simple-books-api.glitch.me/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "bearertoken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientName\": \"Konda Raviteja\",\r\n    \"clientEmail\": \"ravitejakonda5@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://simple-books-api.glitch.me/api-clients/"
+					},
+					"response": []
+				},
+				{
+					"name": "validateorder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "51a8b50bc0fe6112093dfc1767a0b7d4732016b24674167d9f35a5c63d6f7d58"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://simple-books-api.glitch.me/orders/Nd3OEfY9TjTLhAUasPYL9"
+					},
+					"response": []
+				},
+				{
+					"name": "patch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "51a8b50bc0fe6112093dfc1767a0b7d4732016b24674167d9f35a5c63d6f7d58"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerName\": \"teja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://simple-books-api.glitch.me/orders/Nd3OEfY9TjTLhAUasPYL9"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
